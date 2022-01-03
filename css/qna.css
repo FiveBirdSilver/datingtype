@@ -1,0 +1,49 @@
+#QnA {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    text-align: center;
+}
+.Qbox {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+.Abox button {
+    width:650px;
+    height: 70px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-top: 10px;
+    font-family: 'NeoDunggeunmo';
+    font-size: 15px;
+    text-align: center;
+}
+.Abox button:hover {
+    background-color: whitesmoke;
+    opacity: 50%;
+    cursor: pointer;
+}
+.status {
+    display: flex;
+    width: 500px;
+    height: 15px;
+    border-radius: 20px;
+    background-color: lightcyan;
+    opacity: 70%;
+}
+.statusBar {
+    background-color: red;
+    border-radius: 20px;
+    opacity: 90%;    
+}
+.QnAwrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.count {
+    padding-left: 20px;
+}

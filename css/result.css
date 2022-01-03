@@ -1,0 +1,54 @@
+@keyframes bounce {
+  from {
+    top: 25%;
+    transform: scaleX(65.5%) scaleY(65%);
+  }
+  to {
+    top: 45%;
+  }
+}
+.pocketball {
+    display: flex;
+    flex-direction: column;
+}
+.pocketball img {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    right: calc(50% - 50px);
+    left: calc(50% - 100px);
+    animation: bounce 1s ease-in-out infinite;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    cursor: pointer;
+}
+.pocketball p {
+    font-size: 18px;
+    margin-top: 100px;
+}
+#openpocketball img {
+    width: 200px;
+    height: 200px;
+    margin-top: 70%;
+  }
+#Result {
+  text-align: center;
+  padding:20px 100px;
+}
+.resultImg img {
+  padding:20px;
+  width:150px;
+}
+.resultDesc {
+  width:500px;
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+.replay {
+  background-color: transparent;
+  border: 0;
+}
+.replay img {
+  width: 100px;
+  cursor: pointer;
+}
