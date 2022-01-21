@@ -3,11 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="short icon" href="img/pokeball.png">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/qna.css">
     <link rel="stylesheet" href="css/result.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/Dalgona/neodgm-webfont@1.510/neodgm/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
     <title>연애 유형 테스트</title>
 </head>
@@ -18,7 +20,7 @@
             <h1>포켓몬으로 알아보는<br>연애 유형 테스트</h1>
             <img src="img/pokeball.png" alt="포켓몬스터볼">
             <p>어떤 포켓몬이 나올까요?<br>아래 버튼을 눌러 시작해주세요!</p>
-            <button class="StartBtn"><img src="./img/start.png"/></button>
+            <button class="StartBtn"><img src="./img/start.png" /></button>
             <span>FiveBirdSilver ⓒ 2022 All rights reserved.</span>
         </section>
         <section id="QnA">
@@ -34,8 +36,10 @@
         </section>
         <section id="pocketballimg">
             <div class="pocketball">
-                <p>아래의 포켓볼을 누른 후 결과를 확인해보세요!</p>
-                <img src="./img/pokeball.png"/>  
+                <div class="resultloading">
+                    <p>아래의 포켓볼을 누른 후 결과를 확인해보세요!</p>
+                </div>
+                <img src="./img/pokeball.png" />
             </div>
         </section>
         <section id="Result">
@@ -43,12 +47,13 @@
             <div class="resultname"></div>
             <div class="resultImg"></div>
             <div class="resultDesc"></div>
-            <button class="replay"><img src="img/replay.png"/></button>
+            <button class="replay"><img src="img/replay.png" /></button>
         </section>
     </div>
-    
+
     <script src="js/main.js" charset="UTF-8"></script>
     <script src="js/data.js" charset="UTF-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
 </body>
 
