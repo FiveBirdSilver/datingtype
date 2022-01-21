@@ -1,39 +1,87 @@
 body {
+    margin:0;
+    height: 100%;
+    width: 100%;
+}
+#Result, #QnA, #pocketballimg, #openpocketball {
+    display: none;
+}
+.contain {
     background-image: url('../img/background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
     font-family: 'NeoDunggeunmo';
 }
 #Main {
-    margin-top: 35%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 100%;
+    height: 100%;
 }
 #Main img {
-    width: 150px;
+    width: 10%;
+    margin-bottom: 3%;
 }
-#Result, #QnA, #pocketballimg, #openpocketball {
-    display: none;
+#Main h1 {
+    font-size: 28px;
+    margin-top: 5%;
+    margin-bottom: 2%;
 }
 .StartBtn {
+    width: 100%;
     background-color: transparent;
     border: 0;
-    margin-top: 15%;
-    margin-bottom: 40%;
-
+    margin-bottom: 5%;
 }
 .StartBtn img {
-    width: 170px;
     cursor: pointer;
 }
 span {
     font-size: 13px;
 }
+@media screen and (max-width:768px) {
+ 
+    #Main h1 {
+        margin-bottom: 10%;
+        font-size: 28px;
+    }
+    #Main img {
+        width: 200px;
+        margin-bottom: 10%;
+    }
+    #Main p {
+        margin-bottom: 5%;
+    }
+    .StartBtn {
+        margin-bottom: 25%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1180px) {
+    #Main h1 {
+        margin-bottom: 5%;
+        font-size: 2rem;
+    }
+    #Main img {
+        width: 20%;
+        margin-bottom: 5%;
+    }
+    #Main p {
+        font-size: 1rem;
+        margin-bottom: 5%;
 
+    }
+    .StartBtn {
+        margin-bottom: 15%;
+    }
+    span {
+        font-size: 15px;
+    }
+}
