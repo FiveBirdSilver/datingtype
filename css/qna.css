@@ -1,16 +1,41 @@
 #QnA {
-    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    top: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    width: 100%;
+}
+.QnAwrap {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
-    text-align: center;
+    /* margin-top: 5%; */
+}
+.status {
+    display: flex;
+    width: 50%;
+    height: 15px;
+    border-radius: 20px;
+    background-color: lightcyan;
+    opacity: 70%;
+}
+.statusBar {
+    background-color: red;
+    border-radius: 20px;
+    opacity: 90%;    
+}
+.count {
+    padding-left: 20px;
 }
 .Qbox {
     font-size: 22px;
-    margin-bottom: 25px;
+    margin: 5% 5% 1% 5%;
+
 }
 .Abox button {
-    width:650px;
+    width:60%;
     height: 70px;
     background-color: transparent;
     border: 2px solid black;
@@ -25,25 +50,21 @@
     opacity: 50%;
     cursor: pointer;
 }
-.status {
-    display: flex;
-    width: 500px;
-    height: 15px;
-    border-radius: 20px;
-    background-color: lightcyan;
-    opacity: 70%;
+
+@media screen and (max-width:768px) {
+    .Qbox {
+        font-size: 14px;
+        margin-top: 10%;
+        margin-bottom: 5%
+    }
+    .status {
+        width: 70%;
+    }
+    .Abox button {
+        width: 90%;
+        font-size: 12px;
+    }
 }
-.statusBar {
-    background-color: red;
-    border-radius: 20px;
-    opacity: 90%;    
-}
-.QnAwrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-}
-.count {
-    padding-left: 20px;
+@media (min-width: 768px) and (max-width: 991px) {
+   
 }
